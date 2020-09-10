@@ -1,7 +1,7 @@
 node ("worker1") {
-#    stage("Source") {
-#        git url: 'https://github.com/mimikuku/testJenkins.git'
-#    }
+//    stage("Source") {
+//        git url: 'https://github.com/mimikuku/testJenkins.git'
+//    }
     stage("Build") {
         sh "echo Gradle build wil go here"
         sh "echo ${currentBuild}"
