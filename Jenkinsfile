@@ -22,7 +22,9 @@ node ("worker1") {
             script: 'test -e /home/jenkins2/marker.txt'
             return (ret == 1)
         }
+        }
     }
-
+    stage("new_word") {
+        sh "echo Add new strings"
     }
 }
